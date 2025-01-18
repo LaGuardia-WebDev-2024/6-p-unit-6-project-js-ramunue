@@ -1,43 +1,56 @@
 <!-- Unit 6 Project
 Requirements
-[  ] three different shapes
-[  ] three different RGB colors
-[  ] three comments 
-[  ] three new HTML elements 
+[  x] three different shapes
+[  x] three different RGB colors
+[  x] three comments 
+[  x] three new HTML elements 
 
 Select ONE Additional 
-[ no ] Feature 1 - three different strokeWeight() commands
+[ x ] Feature 1 - three different strokeWeight() commands
 [ no ] Feature 2 - Add a second <canvas>
 [ no ] Feature 3 - Change Tab Title & Image
 [ no ] Feature 4 - Typewriter Animation
 [ no ] Feature 5 - Gradient Background
 -->
-
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
-    <title>Unit 6 Project</title>
+    <title>Pizza Drawing Project</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/processing.js/1.6.6/processing.min.js"></script>
-    <style></style>
+    <style>
+      body {
+        font-family: 'Arial', sans-serif;
+        background-color: #f0f0f0;
+      }
+      h1 {
+        text-align: center;
+        font-weight: bold;
+        color: black;
+      }
+      p {
+        font-size: 16px;
+        color: grey;
+        text-align: center;
+      }
+    </style>
   </head>
 
   <body>
     <div class="container">
-      <div>
-        <h2 id="start">How it started.</h2>
+      <h1>Pizza Drawing Project</h1>
+      <p>Created using basic shapes and RGB colors</p>
+      <div class="image-container">
         <img
-          class="pic" src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c7/Chill_guy_original_artwork.jpg/220px-Chill_guy_original_artwork.jpg"
+          class="pic"
+          src="https://cdn.glitch.global/036ae095-1f3e-4493-91d3-da9d2efd0618/IMG_2480.jpeg?v=1737155453932"
+          alt="Pizza"
         />
       </div>
-      <div>
-        <h2 id="end">How it ended.</h2>
-        <canvas id="myCanvas" data-processing-sources="myP5Code.pde"> </canvas>
-      </div>
+      <h2 id="end">How it ended.</h2>
+      <canvas id="myCanvas" data-processing-sources="myP5Code.pde"></canvas>
     </div>
   </body>
 </html>
-
-<!--- Taken From Khan Academy Intro to JS: Drawing & Animation --->
